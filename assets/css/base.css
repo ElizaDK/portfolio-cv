@@ -43,7 +43,7 @@ html{
     background: var(--white);
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 2rem 9%;
     box-shadow: var(--box-shadow);
     position: fixed;
@@ -81,7 +81,7 @@ html{
     border-radius: 5rem;
     border-top-left-radius: 0;
     cursor: pointer;
-    background: none;
+    background: rgba(255, 255, 255, 0.397);
     color: var(--black);
     font-size: 1.7rem;
     overflow:hidden;
@@ -143,18 +143,30 @@ html{
         margin: 2rem;
         font-size: 2rem;
     }
+    .header{
+        justify-content: space-between;
+    }
     #menu-btn{
         display: inline-block;
     }
     section{
         padding: 5rem 2rem;
     }
+    .content h3{
+        font-size: 1.5rem;
+    }
 }
 
 
 @media (max-width:450px){
     html{
-        font-size: 50%;
+        font-size: 45%;
+    }
+    .content h3{
+        font-size: 1.1rem;
+    }
+    .header{
+        justify-content: space-between;
     }
 }
 
