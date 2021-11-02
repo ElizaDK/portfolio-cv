@@ -25,3 +25,17 @@
     };
 
 
+//efeito máquina escrever
+
+function typewriter(elemento){
+    const textArray = elemento.innerHTML.split('');//dividir por letras
+    elemento.innerHTML = '';//começar vazio
+    textArray.forEach((letra, i) => {//para cada letra um tempo
+        setTimeout(function(){
+            elemento.innerHTML += letra;
+        }, 75 * i)
+    });
+}
+
+const titulo = document.querySelector('h3');
+typewriter(titulo);
